@@ -1,0 +1,1 @@
+:root{--blue-1: #9ed4d2;--blue-2: #6699CC;--yellow-1: #FAC742;--white: #FFF;--grey-1: #EDEDED;--shadow-dark: rgba(0,0,0,.3);--shadow-light: rgba(255,255,255,.1)}*{margin:0;padding:0;box-sizing:border-box}body{overflow:hidden}@media only screen and (max-width: 600px){body{font-size:5px}}
