@@ -1,0 +1,229 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --blue-1: #9ed4d2;
+  --blue-2:  blue;
+  --yellow-1: #FAC742;
+  --white: #FFF;
+  --grey-1: #EDEDED;
+  --shadow-dark: rgba(0,0,0,0.3);
+  --shadow-light: rgba(255,255,255,0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--blue-1);
+  color:red;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container {
+
+  width: 700px;
+  height: 80vh;
+  background-color: var(--blue-2);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px var(--shadow-dark);
+}
+.upperdata{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.lowerdata {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.upperdata img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.weather-data {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--shadow-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.location {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.temperature {
+  color: var(--white);
+  font-size: 4em;
+  text-align: center;
+  font-weight: 900;
+}
+.more-info-label {
+  color: var(--white);
+}
+
+.more-info-container {
+  flex: 1;
+  background-color: var(--shadow-light);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 1em;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info-block {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-block-label {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-block-label img {
+  width: 1.5em;
+}
+
+.info-block-label span {
+  color: var(--white);
+  font-size: 0.8em;
+}
+
+.info-block-value {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--white);
+}
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+}
+
+.float-child {
+  width: 30%;
+  float: left;
+  padding: 5px;
+  border: 2px solid var(--blue-1);
+  margin:50px;
+}
+
+
+body {
+  font-size: 28px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: var(--blue-2);
+}
+.banner{
+  width:100%;
+  height:400px
+}
+/* div .image{
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+} */
+
+.image img  {
+   pointer-events: none;
+  /* position: relative; */
+   position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+ p {
+  justify-content: center;
+  padding: 0;
+  margin:0;
+  margin-top:200px;
+  font-size: 30px;
+  font-weight: bolder;
+  font-style: italic;
+  color: #EDEDED;
+}
+.child2{
+  /* left:1000px; */
+  width: 30%;
+  float:right;
+  padding: 5px;
+  border: 2px solid var(--blue-1);
+  margin:50px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+     background-color: green;
+  }
+}
