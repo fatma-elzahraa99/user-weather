@@ -129,7 +129,7 @@ export class AppComponent {
       switchMap((value:any)=>{
         this.userIpAddress=value.ip
         console.log("value ip",value.ip)
-          let url =`http://api.ipstack.com/${value.ip}?access_key=216bc9d571949e768f574a7f502b6079`
+          let url =`https://api.ipstack.com/${value.ip}?access_key=216bc9d571949e768f574a7f502b6079`
         // let url =`https://api.worldweatheronline.com/premium/v1/weather.ashx?key=e4c22c5f55264006b5d210704222805&q=${value.ip}&format=json`
         // let url=`http://countryapi.gear.host/v1/Country/getCountries?pName=Costa%20Rica`
 
